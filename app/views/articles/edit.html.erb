@@ -1,0 +1,10 @@
+<%= form_for(@article) do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title %>
+    <%= a.label :content %>
+  <%= a.text_field :content %>
+  <%= a.submit "Update Article" %>
+<% end %>
+
+<%= link_to "Show", article_path(@article.id)  %>
+<%= link_to "Back", articles_path %>
